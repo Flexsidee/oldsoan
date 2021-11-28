@@ -1,0 +1,28 @@
+$white: #fff;
+$grey3: #aaa;
+$light-blue1: #e3f2fd;
+$light-blue2: #bbdefb;
+$blue: #2196f3;
+$black: #000;
+$black2: #202020;
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+%display-flex {
+	display: flex;
+	align-items: center;
+}
+
+%big-text {
+	font-size: 40px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+%box-shadow-corner {
+	box-shadow: 0px 4px 4px rgba($black, 0.04);
+	border-radius: 14px;
+}

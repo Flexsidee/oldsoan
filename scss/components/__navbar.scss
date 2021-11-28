@@ -1,0 +1,102 @@
+@use "../custom" as *;
+
+nav {
+	@extend %display-flex;
+	background-color: $white;
+	padding: 1rem 1.5rem;
+	justify-content: space-between;
+
+	.nav-left {
+		@extend %display-flex;
+
+		h2 {
+			a {
+				text-decoration: none;
+				color: $black;
+				@extend %big-text;
+
+				&:visited {
+					color: $black;
+				}
+			}
+		}
+
+		.search {
+			border: 1px $grey3 solid;
+			border-radius: 15px;
+			padding: 0.8rem 1rem;
+			margin-left: 2rem;
+
+			span {
+				padding-right: 0.5rem;
+
+				i {
+					color: $blue;
+					font-size: 20px;
+				}
+			}
+
+			input {
+				border: 0;
+				outline: none;
+				background-color: transparent;
+			}
+
+			&:hover {
+				border: 1px $light-blue2 solid;
+			}
+		}
+	}
+
+	.nav-right {
+		@extend %display-flex;
+
+		ul {
+			list-style-type: none;
+			@extend %display-flex;
+
+			li {
+				margin-right: 3rem;
+				font-weight: bold;
+				font-size: larger;
+				a {
+					text-decoration: none;
+					color: $black;
+				}
+			}
+		}
+
+		.notification-user {
+			@extend %display-flex;
+
+			.notification-badge {
+				position: relative;
+				padding: 0.5rem 0.3rem 0 0;
+				cursor: pointer;
+
+				.icon {
+					color: $grey3;
+					font-size: 30px;
+				}
+
+				.badge {
+					position: absolute;
+					top: 0;
+					right: 0;
+					border-radius: 50%;
+					background-color: $blue;
+					color: $white;
+					padding: 0.2rem;
+					font-size: 70%;
+					border: 1px $white solid;
+				}
+			}
+			img {
+				width: 70px;
+				height: 70px;
+				margin-left: 1rem;
+				border-radius: 15px;
+			}
+		}
+	}
+}

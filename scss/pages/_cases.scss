@@ -1,0 +1,138 @@
+@use "../custom" as *;
+
+#cases-page {
+	.page-content {
+		background-color: $light-blue1;
+		padding: 2rem 2rem;
+
+		.heading {
+			@extend %display-flex;
+			justify-content: space-between;
+			h1 {
+				@extend %big-text;
+			}
+
+			.cases-filter {
+				background-color: $white;
+				padding: 0.2rem;
+				@extend %box-shadow-corner;
+
+				ul {
+					list-style-type: none;
+					@extend %display-flex;
+					justify-content: center;
+					font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+					li {
+						border-radius: 12px;
+						padding: 0.5rem 0.8rem;
+						color: $grey3;
+						cursor: pointer;
+						transition: 0.2s ease-in;
+
+						&:hover {
+							color: $black2;
+						}
+					}
+
+					.active {
+						background-color: $light-blue1;
+						color: $blue;
+
+						&:hover {
+							color: $blue;
+							background-color: $light-blue2;
+						}
+					}
+				}
+			}
+		}
+
+		.cases-list {
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			gap: 1rem;
+			margin-top: 2rem;
+
+			.single-case {
+				background-color: $white;
+				padding: 2rem 1rem;
+				@extend %box-shadow-corner;
+				@extend %display-flex;
+				flex-direction: column;
+				transition: 0.4s linear;
+
+				.card-head {
+					width: 100%;
+					display: flex;
+
+					.user-image {
+						margin-right: 0.5rem;
+						img {
+							width: 110px;
+							height: 110px;
+							border-radius: 15px;
+						}
+					}
+
+					.user-details {
+						padding-top: 1rem;
+						line-height: 1.3rem;
+
+						.name {
+							color: $black2;
+							font-weight: bold;
+							font-size: 20px;
+						}
+
+						.role {
+							color: $grey3;
+						}
+
+						.company {
+							a {
+								text-decoration: none;
+								color: $blue;
+							}
+
+							a:visited {
+								color: $blue;
+							}
+						}
+					}
+				}
+
+				.card-body {
+					margin: 1rem 0;
+
+					p {
+						text-align: justify;
+						color: $black2;
+
+						&:first-child {
+							margin-bottom: 1rem;
+						}
+					}
+				}
+
+				button {
+					color: $white;
+					background-color: rgba($blue, 0.8);
+					border: none;
+					width: 100%;
+					padding: 1rem;
+					border-radius: 14px;
+					cursor: pointer;
+					transition: 0.4s linear;
+
+					&:hover {
+						background-color: $blue;
+					}
+				}
+
+				&:hover {
+				}
+			}
+		}
+	}
+}

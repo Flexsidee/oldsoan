@@ -1,0 +1,10 @@
+@use "../custom" as *;
+
+.footer {
+	text-align: center;
+	padding: 1rem;
+	color: $white;
+	font-weight: bold;
+	font-size: 20px;
+	background-color: rgba($blue, 0.8);
+}

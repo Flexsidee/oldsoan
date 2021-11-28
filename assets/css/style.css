@@ -1,3 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+#cases-page .page-content .heading, #cases-page .page-content .heading .cases-filter ul, #cases-page .page-content .cases-list .single-case, nav, nav .nav-left, nav .nav-right, nav .nav-right ul, nav .nav-right .notification-user {
+  display: flex;
+  align-items: center;
+}
+
+#cases-page .page-content .heading h1, nav .nav-left h2 a {
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#cases-page .page-content .heading .cases-filter, #cases-page .page-content .cases-list .single-case {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+  border-radius: 14px;
+}
+
+nav {
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  justify-content: space-between;
+}
+nav .nav-left h2 a {
+  text-decoration: none;
+  color: #000;
+}
+nav .nav-left h2 a:visited {
+  color: #000;
+}
+nav .nav-left .search {
+  border: 1px #aaa solid;
+  border-radius: 15px;
+  padding: 0.8rem 1rem;
+  margin-left: 2rem;
+}
+nav .nav-left .search span {
+  padding-right: 0.5rem;
+}
+nav .nav-left .search span i {
+  color: #2196f3;
+  font-size: 20px;
+}
+nav .nav-left .search input {
+  border: 0;
+  outline: none;
+  background-color: transparent;
+}
+nav .nav-left .search:hover {
+  border: 1px #bbdefb solid;
+}
+nav .nav-right ul {
+  list-style-type: none;
+}
+nav .nav-right ul li {
+  margin-right: 3rem;
+  font-weight: bold;
+  font-size: larger;
+}
+nav .nav-right ul li a {
+  text-decoration: none;
+  color: #000;
+}
+nav .nav-right .notification-user .notification-badge {
+  position: relative;
+  padding: 0.5rem 0.3rem 0 0;
+  cursor: pointer;
+}
+nav .nav-right .notification-user .notification-badge .icon {
+  color: #aaa;
+  font-size: 30px;
+}
+nav .nav-right .notification-user .notification-badge .badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  background-color: #2196f3;
+  color: #fff;
+  padding: 0.2rem;
+  font-size: 70%;
+  border: 1px #fff solid;
+}
+nav .nav-right .notification-user img {
+  width: 70px;
+  height: 70px;
+  margin-left: 1rem;
+  border-radius: 15px;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: rgba(33, 150, 243, 0.8);
+}
+
+#cases-page .page-content {
+  background-color: #e3f2fd;
+  padding: 2rem 2rem;
+}
+#cases-page .page-content .heading {
+  justify-content: space-between;
+}
+#cases-page .page-content .heading .cases-filter {
+  background-color: #fff;
+  padding: 0.2rem;
+}
+#cases-page .page-content .heading .cases-filter ul {
+  list-style-type: none;
+  justify-content: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#cases-page .page-content .heading .cases-filter ul li {
+  border-radius: 12px;
+  padding: 0.5rem 0.8rem;
+  color: #aaa;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+#cases-page .page-content .heading .cases-filter ul li:hover {
+  color: #202020;
+}
+#cases-page .page-content .heading .cases-filter ul .active {
+  background-color: #e3f2fd;
+  color: #2196f3;
+}
+#cases-page .page-content .heading .cases-filter ul .active:hover {
+  color: #2196f3;
+  background-color: #bbdefb;
+}
+#cases-page .page-content .cases-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+#cases-page .page-content .cases-list .single-case {
+  background-color: #fff;
+  padding: 2rem 1rem;
+  flex-direction: column;
+  transition: 0.4s linear;
+}
+#cases-page .page-content .cases-list .single-case .card-head {
+  width: 100%;
+  display: flex;
+}
+#cases-page .page-content .cases-list .single-case .card-head .user-image {
+  margin-right: 0.5rem;
+}
+#cases-page .page-content .cases-list .single-case .card-head .user-image img {
+  width: 110px;
+  height: 110px;
+  border-radius: 15px;
+}
+#cases-page .page-content .cases-list .single-case .card-head .user-details {
+  padding-top: 1rem;
+  line-height: 1.3rem;
+}
+#cases-page .page-content .cases-list .single-case .card-head .user-details .name {
+  color: #202020;
+  font-weight: bold;
+  font-size: 20px;
+}
+#cases-page .page-content .cases-list .single-case .card-head .user-details .role {
+  color: #aaa;
+}
+#cases-page .page-content .cases-list .single-case .card-head .user-details .company a {
+  text-decoration: none;
+  color: #2196f3;
+}
+#cases-page .page-content .cases-list .single-case .card-head .user-details .company a:visited {
+  color: #2196f3;
+}
+#cases-page .page-content .cases-list .single-case .card-body {
+  margin: 1rem 0;
+}
+#cases-page .page-content .cases-list .single-case .card-body p {
+  text-align: justify;
+  color: #202020;
+}
+#cases-page .page-content .cases-list .single-case .card-body p:first-child {
+  margin-bottom: 1rem;
+}
+#cases-page .page-content .cases-list .single-case button {
+  color: #fff;
+  background-color: rgba(33, 150, 243, 0.8);
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.4s linear;
+}
+#cases-page .page-content .cases-list .single-case button:hover {
+  background-color: #2196f3;
+}
 
 /*# sourceMappingURL=style.css.map */
