@@ -1,0 +1,7 @@
+@use "custom";
+
+//import the components
+@use "./components/_navbar";
+
+//import the pages
+@use "./pages/cases";
