@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-#cases-page .page-content .heading, #cases-page .page-content .heading .cases-filter ul, #cases-page .page-content .cases-list .single-case, nav, nav .nav-left, nav .nav-right, nav .nav-right ul, nav .nav-right .notification-user {
+#user-profile .page-content .head, #user-profile .page-content .head .user, #user-profile .page-content .head .user-reported, #cases-page .page-content .heading, #cases-page .page-content .heading .cases-filter ul, #cases-page .page-content .cases-list .single-case, nav, nav .nav-left, nav .nav-right, nav .nav-right ul, nav .nav-right .notification-user {
   display: flex;
   align-items: center;
 }
@@ -23,6 +23,7 @@ nav {
   background-color: #fff;
   padding: 1rem 1.5rem;
   justify-content: space-between;
+  box-shadow: 0px 4px 4px rgba(187, 222, 251, 0.4);
 }
 nav .nav-left h2 a {
   text-decoration: none;
@@ -199,6 +200,88 @@ nav .nav-right .notification-user img {
 }
 #cases-page .page-content .cases-list .single-case button:hover {
   background-color: #2196f3;
+}
+#user-profile .page-content {
+  padding: 2rem;
+}
+#user-profile .page-content .head {
+  justify-content: space-between;
+  padding-right: 3rem;
+  margin-bottom: 2rem;
+}
+#user-profile .page-content .head .user {
+  justify-content: center;
+}
+#user-profile .page-content .head .user .user-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 35px;
+}
+#user-profile .page-content .head .user .user-details {
+  margin-left: 3rem;
+}
+#user-profile .page-content .head .user .user-details .name {
+  font-weight: bold;
+  font-size: 36px;
+  color: #202020;
+}
+#user-profile .page-content .head .user .user-details .role {
+  color: #aaa;
+}
+#user-profile .page-content .head .user .user-details .company a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #2196f3;
+}
+#user-profile .page-content .head .user .user-details .company a:visited {
+  color: #2196f3;
+}
+#user-profile .page-content .head .user .user-details .buttons {
+  margin-top: 2rem;
+}
+#user-profile .page-content .head .user .user-details .buttons button {
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.4s linear;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+#user-profile .page-content .head .user .user-details .buttons span {
+  font-size: 20px;
+  margin-right: 0.5rem;
+}
+#user-profile .page-content .head .user .user-details .buttons .recommend {
+  color: #fff;
+  background-color: rgba(33, 150, 243, 0.8);
+}
+#user-profile .page-content .head .user .user-details .buttons .recommend:hover {
+  background-color: #2196f3;
+}
+#user-profile .page-content .head .user .user-details .buttons .report {
+  padding: 1rem 3rem;
+  color: #f23e3e;
+  background-color: #f9b1b1;
+}
+#user-profile .page-content .head .user .user-details .buttons .report:hover {
+  background-color: rgba(242, 62, 62, 0.6);
+}
+#user-profile .page-content .head .user-reported {
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f9b1b1;
+  border-radius: 50%;
+  width: 135px;
+  height: 135px;
+  color: #f23e3e;
+  font-weight: bold;
+}
+#user-profile .page-content .head .user-reported .icon i {
+  font-size: 60px;
+}
+#user-profile .page-content hr {
+  color: #bbdefb;
 }
 
 /*# sourceMappingURL=style.css.map */

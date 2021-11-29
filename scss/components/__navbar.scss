@@ -5,6 +5,7 @@ nav {
 	background-color: $white;
 	padding: 1rem 1.5rem;
 	justify-content: space-between;
+	box-shadow: 0px 4px 4px rgba($light-blue2, 0.4);
 
 	.nav-left {
 		@extend %display-flex;

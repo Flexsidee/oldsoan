@@ -1,0 +1,111 @@
+@use "../custom" as *;
+
+#user-profile {
+	.page-content {
+		padding: 2rem;
+
+		.head {
+			@extend %display-flex;
+			justify-content: space-between;
+			padding-right: 3rem;
+			margin-bottom: 2rem;
+
+			.user {
+				@extend %display-flex;
+				justify-content: center;
+
+				.user-image {
+					img {
+						width: 200px;
+						height: 200px;
+						border-radius: 35px;
+					}
+				}
+
+				.user-details {
+					margin-left: 3rem;
+
+					.name {
+						font-weight: bold;
+						font-size: 36px;
+						color: $black2;
+					}
+
+					.role {
+						color: $grey3;
+					}
+
+					.company {
+						a {
+							text-decoration: none;
+							font-weight: bold;
+							color: $blue;
+						}
+
+						a:visited {
+							color: $blue;
+						}
+					}
+
+					.buttons {
+						margin-top: 2rem;
+						button {
+							border: none;
+							padding: 1rem 2rem;
+							border-radius: 14px;
+							cursor: pointer;
+							transition: 0.4s linear;
+							font-weight: bold;
+							margin-right: 2rem;
+						}
+
+						span {
+							font-size: 20px;
+							margin-right: 0.5rem;
+						}
+
+						.recommend {
+							color: $white;
+							background-color: rgba($blue, 0.8);
+
+							&:hover {
+								background-color: $blue;
+							}
+						}
+
+						.report {
+							padding: 1rem 3rem;
+							color: $danger;
+							background-color: $danger-light;
+
+							&:hover {
+								background-color: rgba($danger, 0.6);
+							}
+						}
+					}
+				}
+			}
+			.user-reported {
+				@extend %display-flex;
+				flex-direction: column;
+				justify-content: center;
+				background-color: $danger-light;
+				border-radius: 50%;
+				width: 135px;
+				height: 135px;
+				color: $danger;
+				font-weight: bold;
+
+				.icon {
+					i {
+						font-size: 60px;
+					}
+				}
+			}
+		}
+
+		hr {
+			color: $light-blue2;
+		}
+	}
+}
